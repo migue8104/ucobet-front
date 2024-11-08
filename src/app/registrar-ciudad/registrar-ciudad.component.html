@@ -1,0 +1,21 @@
+<h1 class="text-center title">Registrar Ciudad</h1>
+
+<div class="container">
+  <form [formGroup]="ciudadForm" (ngSubmit)="guardarCiudad()">
+    <div class="form-group">
+      <label for="formGroupExampleInput">Nombre</label>
+      <input type="text" class="form-control" formControlName = "name" placeholder="Ingrese el nombre ">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Estados</label>
+            <select class = "form-control" formControlName = "state">
+              <option [ngValue]="item" *ngFor="let item of states">{{item.name}}</option>
+          </select>
+  </div>
+
+      <div class="form-group">
+        <button type="submit">Registrar Ciudad</button>
+      </div>
+  </form>
+</div>
