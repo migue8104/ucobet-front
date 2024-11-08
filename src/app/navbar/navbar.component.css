@@ -1,32 +1,37 @@
-.title {
-    font-size: 25px;
+/* Colores y organización de la barra de navegación */
+.navbar {
+    border-bottom: 2px solid #004d00; /* Verde oscuro */
+}
+
+.navbar-brand.title {
     font-weight: bold;
+    font-size: 1.5em;
+    color: #004d00;
 }
 
-.nav-cliente {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
+.nav-pills .nav-link {
+    margin: 0 0.5em;
+    padding: 0.5em 1em;
     font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
 }
 
-.nav-cliente:hover {
-    background-color: black;
-    color: white;
+/* Colores de enlaces */
+.nav-link.text-green {
+    color: #004d00; /* Verde oscuro */
 }
 
-.nav-login {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
+.nav-link.bg-green {
+    background-color: #f51818; /* Verde medio para el botón "Cerrar Sesión" */
+    color: #ffffff;
 }
 
-.nav-login:hover {
-    background-color: black;
-    color: white;
+/* Hover Effects */
+.nav-link.text-green:hover {
+    background-color: #e6f2e6; /* Fondo verde suave al pasar el cursor */
 }
 
-nav {
-    background-color: #cfcdce !important;
+.nav-link.bg-green:hover {
+    background-color: #005900; /* Verde más oscuro */
 }

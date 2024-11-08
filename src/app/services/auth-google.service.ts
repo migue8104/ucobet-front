@@ -19,9 +19,12 @@ export class AuthGoogleService {
   private isLoggedInSubject = new ReplaySubject<boolean | null>(1);
   isLoggedIn$ = this.isLoggedInSubject.asObservable();
 
+  private lastLoggedInStatus: boolean | null = null;
+
   constructor() {
     this.initConfiguration();
   }
+
 
   loadUserProfile() {
     const url = "https://www.googleapis.com/oauth2/v2/userinfo";
@@ -68,5 +71,9 @@ export class AuthGoogleService {
 
   get idToken(): string | null {
     return this.oAuthService.getIdToken();
+  }
+
+  isAuthenticated(): boolean {
+    return !!this.lastLoggedInStatus;
   }
 }

@@ -1,11 +1,11 @@
-<nav *ngIf="showNavbar" id="navbar-example2" class="navbar navbar-light bg-light px-3">
-  <a class="navbar-brand title">UcoBet</a>
+<nav *ngIf="showNavbar" id="navbar-example2" class="navbar navbar-light bg-white px-3 shadow">
+  <a class="navbar-brand title text-green">UcoBet</a>
   <ul class="nav nav-pills">
     <li class="nav-item">
-      <a class="nav-link nav-cliente" routerLink="/registro-ciudad">Registrar Ciudad</a>
+      <a class="nav-link nav-cliente text-green" routerLink="/registro-ciudad">Registrar Ciudad</a>
     </li>
     <li class="nav-item" *ngIf="isLoggedIn">
-      <a class="nav-link nav-login" (click)="logout()">Cerrar Sesión</a>
+      <a class="nav-link nav-login text-white bg-green" (click)="logout()">Cerrar Sesión</a>
     </li>
   </ul>
 </nav>

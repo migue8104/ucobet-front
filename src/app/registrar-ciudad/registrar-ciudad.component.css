@@ -1,41 +1,43 @@
 .title {
-    font-size: 40px;
-    margin-top: 2%;
     font-weight: bold;
+    font-size: 2em;
+    color: #004d00;
 }
 
-form button {
-    width: 15%;
-    padding: 10px;
-    background-color: #373b3c;
-    color: white;
+.form-container {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    border: 1px solid #e6f2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+
+.form-label {
     font-weight: bold;
+    color: #004d00;
+}
+
+
+.btn-green {
+    background-color: #007500;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.5em 2em;
     border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 2%;
-    margin-bottom: 5%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-form label {
-    font-size: 17px;
-    font-weight: bold;  
+.btn-green:hover {
+    background-color: #005900;
 }
 
-form input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-}
 
-form select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-}
-
-form button:hover {
-    background-color: #CCCCCC;
-    color: black;
+.form-control {
+    border: 1px solid #004d00;
+    border-radius: 5px;
+    color: #004d00;
 }

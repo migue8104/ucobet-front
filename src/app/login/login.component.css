@@ -1,0 +1,45 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+    color: #004d00;
+}
+
+.logo-container {
+    margin-bottom: 1em;
+}
+
+.ucobet-logo {
+    width: 290px; /* Ajusta el tamaño del logotipo */
+}
+
+.welcome-message h1 {
+    font-size: 2.5em;
+    color: #004d00;
+    margin: 0;
+}
+
+.welcome-message p {
+    font-size: 1.2em;
+    color: #004d00;
+    margin-bottom: 2em;
+}
+
+.login-button button {
+    display: flex;
+    align-items: center;
+    background-color: #007500;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.google-icon {
+    width: 20px;
+    margin-right: 0.5em;
+}

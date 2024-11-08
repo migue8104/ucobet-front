@@ -14,6 +14,11 @@ export class LoginComponent {
     this.authService = this.injector.get(AuthGoogleService);
   }
 
+
+  get isLogged() {
+    return this.authService.isAuthenticated();
+  }
+
   signInWithGoogle() {
     this.authService.login();
   }

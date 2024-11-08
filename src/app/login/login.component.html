@@ -1,17 +1,19 @@
-<div class="login-button">
-
-    <button mat-raised-button (click)="signInWithGoogle()">
-  
-      <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
-  
-        alt="Google"
-  
-        class="google-icon"
-  
-      />
-  
-      Sign in with Google
-  
-    </button>
-  
+<div class="login-container">
+  <div class="logo-container">
+      <img src="assets/images/uco1.png" alt="Ucobet Logo" class="ucobet-logo">
   </div>
+  <div class="welcome-message">
+      <h1>¡Bienvenido a Ucobet!</h1>
+      <p>Donde la emoción y las apuestas se encuentran</p>
+  </div>
+  <div class="login-button">
+      <button mat-raised-button (click)="signInWithGoogle()">
+          <img 
+              src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" 
+              alt="Google" 
+              class="google-icon" 
+          />
+          Continuar con Google
+      </button>
+  </div>
+</div>

@@ -26,13 +26,17 @@ export class RegistrarCiudadComponent implements OnInit{
 
 }
 
-  ngOnInit(): void {
-    this.estadosService.getAllEstados().subscribe(resp => {
-      this.states = resp.datos
+ngOnInit(): void {
+  this.estadosService.getAllEstados().subscribe(
+    resp => {
+      this.states = resp.datos;
     },
-      error => { console.error(error) }
-    );
-  }
+    error => {
+      console.error(error);
+      window.alert("No se pudo cargar la lista de estados. Por favor, intente más tarde.");
+    }
+  );
+}
 
   guardarCiudad() {
     if (this.ciudadForm.valid) {

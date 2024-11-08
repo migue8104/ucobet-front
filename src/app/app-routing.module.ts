@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { RegistrarCiudadComponent } from './registrar-ciudad/registrar-ciudad.component';
 import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/registro-ciudad', pathMatch: 'full' },
-  { path: 'registro-ciudad', component: RegistrarCiudadComponent },
+  { path: 'registro-ciudad', component: RegistrarCiudadComponent , canActivate:[AuthGuard] },
   { path: 'login', component: LoginComponent },
 ];
 
